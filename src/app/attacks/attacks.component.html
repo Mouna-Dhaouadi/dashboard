@@ -1,0 +1,116 @@
+<div class="row">
+<div class="container col-md-5">
+    <h2>Attack Count </h2>
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Attack</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attack of attackCount">
+          <td>{{ attack.info }}</td>
+          <td>{{ attack.count }}</td>
+      </tbody>
+    </table>
+</div>
+<div class="container col-md-2"></div>
+
+<div class="container col-md-5">
+  <h2> attacksEvolutionPerDay</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Attack</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attack of attacksEvolutionPerDay">
+          <td>{{ attack.info }}</td>
+          <td>{{ attack.count }}</td>
+      </tbody>
+    </table>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="container col-md-3">
+      <h3>destination City Count</h3>
+     
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Attack</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let attack of destinationCityCount">
+            <td>{{ attack.info }}</td>
+            <td>{{ attack.count }}</td>
+        </tbody>
+      </table>
+  </div>
+  
+  <div class="container col-md-3">
+    <h3> source City Count</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Attack</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let attack of sourceCityCount">
+            <td>{{ attack.info }}</td>
+            <td>{{ attack.count }}</td>
+        </tbody>
+      </table>
+  </div>
+  
+  <div class="container col-md-3">
+    <h3> source Country Count</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Attack</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let attack of sourceCountryCount">
+            <td>{{ attack.info }}</td>
+            <td>{{ attack.count }}</td>
+        </tbody>
+      </table>
+  </div>
+  <div class="container col-md-3">
+    <h3> Destination Country Count</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Attack</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let attack of destinationCountryCount">
+            <td>{{ attack.info }}</td>
+            <td>{{ attack.count }}</td>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+
