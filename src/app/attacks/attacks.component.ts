@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import { Http } from '@angular/http';
-
+import { showValue } from '../synapse';
 
 
 @Component(
@@ -18,7 +18,11 @@ sourceCityCount = [];
 destinationCountryCount = [];
 sourceCountryCount = [];
 
-url = 'http://localhost:3000/batch/';
+url = 'http://localhost:3001/batch/';
+
+ngOnInit(){
+    const returnFunc = showValue();
+  }
 
 constructor(private http:Http)
 {
