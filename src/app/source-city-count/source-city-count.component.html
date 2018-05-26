@@ -1,0 +1,17 @@
+ 
+  <div class="container col-md-3">
+      <h3> source City Count</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Source City</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let attack of sourceCityCount">
+              <td>{{ attack.info }}</td>
+              <td>{{ attack.count }}</td>
+          </tbody>
+        </table>
+    </div>

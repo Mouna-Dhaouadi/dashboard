@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component'
-import { AttacksComponent } from './attacks/attacks.component';
 import {HttpModule} from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { AttacksCountComponent } from './attacks-count/attacks-count.component';
+import { Http } from '@angular/http/src/http';
+import { HttpserviceService } from './httpservice.service';
+import { AttacksEvolutionPerDayComponent } from './attacks-evolution-per-day/attacks-evolution-per-day.component';
+import { DestinationCityCountComponent } from './destination-city-count/destination-city-count.component';
+import { SourceCityCountComponent } from './source-city-count/source-city-count.component';
+import { SourceCountryCountComponent } from './source-country-count/source-country-count.component';
+import { DestinationCountryCountComponent } from './destination-country-count/destination-country-count.component';
 
 
 const appRoutes: Routes = [
 
   {
     path: 'batch',
-    component: AttacksComponent,
+    component: AppComponent,
     data: { title: 'Attacks Statistics' }
   },
   
@@ -28,7 +35,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AttacksComponent,
+    AttacksCountComponent,
+    AttacksEvolutionPerDayComponent,
+    DestinationCityCountComponent,
+    SourceCityCountComponent,
+    SourceCountryCountComponent,
+    DestinationCountryCountComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +50,10 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-
+  providers:[
+    HttpserviceService
+  ]
+,
   bootstrap: [AppComponent]
 })
 export class AppModule { }
