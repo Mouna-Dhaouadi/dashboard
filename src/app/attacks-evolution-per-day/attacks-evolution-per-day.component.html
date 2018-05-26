@@ -1,18 +1,11 @@
 <div class="container col-md-5">
-    <h2> attacks Evolution Per Day</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Count</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let attack of attacksEvolutionPerDay">
-            <td>{{ attack.info }}</td>
-            <td>{{ attack.count }}</td>
-        </tbody>
-      </table>
+    <h2> attacks Evolution Per Day
+      <span data-toggle="popover" title="Value" data-content="see attacks evolution through the days" class="badge badge-info">Value</span>   </h2>
+     
+
+      <div #chartTarget>
+        chart target
+        </div>
   
   
   </div>

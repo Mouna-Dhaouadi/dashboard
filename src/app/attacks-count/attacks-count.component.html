@@ -1,18 +1,11 @@
 <div class="container col-md-5">
     <h2>Attack Count 
-      <span data-toggle="popover" title="Attack Accounts - UTility" data-content="marketing: our antivirus is effective against all of the top 50 attacks" class="badge badge-info">Value</span>   </h2>
+      <span data-toggle="popover" title="Value" data-content="marketing: our antivirus is effective against all of the top 50 attacks" class="badge badge-info">Value</span>   </h2>
     
-    <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th>Attack</th>
-          <th>Count</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let attack of attackCount">
-          <td>{{ attack.info }}</td>
-          <td>{{ attack.count }}</td>
-      </tbody>
-    </table>
+      <div #chartTarget>
+        chart target
+        </div>
+
 </div>
+
+ 

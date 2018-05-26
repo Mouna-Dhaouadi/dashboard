@@ -22,10 +22,8 @@ export class HttpserviceService {
       this.http.get(API_URL+url)
         .map(res => { return res.json(); })
         .subscribe((res) => {
-          console.log("hhhh",res);
           resolve(res);
         }, (error) => {
-          console.log("error create", error);
           reject(error);
         });
       });

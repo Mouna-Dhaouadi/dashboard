@@ -1,18 +1,15 @@
-<div class="container col-md-3">
-    <h3> Destination Country Count</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Destination Country</th>
-            <th>Count</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let attack of destinationCountryCount">
-            <td>{{ attack.info }}</td>
-            <td>{{ attack.count }}</td>
-        </tbody>
-      </table>
-  </div>
+<div class="container col-md-6">
+    <h3> Destination Country Count
+         
+        <span data-toggle="popover" title="Value" data-content="- our country is in top 50 => we need to improve our security
+            //          - our country is in last 50 => we're good
+            //          - i can't open a dataCenter in a frequently targeted / vulnerable / poor infrastructure country" class="badge badge-info">Value</span>  
+         
+    </h3>
+          <div #chartTarget>
+            chart target
+            </div>
+      </div>
+  
 
     

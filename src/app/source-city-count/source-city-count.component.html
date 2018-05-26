@@ -1,17 +1,13 @@
  
-  <div class="container col-md-3">
-      <h3> source City Count</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Source City</th>
-              <th>Count</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let attack of sourceCityCount">
-              <td>{{ attack.info }}</td>
-              <td>{{ attack.count }}</td>
-          </tbody>
-        </table>
+  <div class="container col-md-6">
+      <h3> source City Count
+
+      <span data-toggle="popover" title="Value" data-content="//if in the top 10 in attacks, city proabaly has very good hackers, good security engineer
+      // => BigCompanies: search for competent hackers thereand offer them empoyment
+      // =>New Businesses: review your business model and avoid messing with these people's interest, they can hack your system
+      // => government: hacking people in not moral, should review ethics and moral values => changes schools systems" class="badge badge-info">Value</span>  
+  </h3>
+        <div #chartTarget>
+          chart target
+          </div>
     </div>
