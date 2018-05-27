@@ -1,15 +1,33 @@
-<div class="container col-md-6">
-    <h3> Destination Country Count
-         
-        <span data-toggle="popover" title="Value" data-content="- our country is in top 50 => we need to improve our security
-            //          - our country is in last 50 => we're good
-            //          - i can't open a dataCenter in a frequently targeted / vulnerable / poor infrastructure country" class="badge badge-info">Value</span>  
-         
-    </h3>
-          <div #chartTarget>
-            chart target
+      <div class="col-md-6">
+        <div class="card card-chart">
+            <div class="card-header card-header-default" style="background-color:  #ff66ff            ">
+            
+                    <div class="row ">
+                            <h3  class="card-title">{{title}}</h3>
+                           
+                            <div class="">
+                            <span class="badge badge-default" data-toggle="dropdown" id="navbarDropdownMenuLink"><h4>Value</h4></span>  
+                          
+                            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+                                <a href="#" class="dropdown-item"> <h4 style="white-space: pre;"> {{value}}</h4></a>
+                                </div>
+                            </div>
+                        </div>
+      
             </div>
+            <div class="card-body">
+                <div #chartTarget>
+                    chart target
+                    </div>
+                </div>
+            <div class="card-footer">
+                <div class="stats">
+               Since Last Batch Job
+                </div>
+            </div>
+        </div>
       </div>
-  
-
+      
+       
+      
     

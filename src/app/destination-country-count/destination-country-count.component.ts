@@ -14,7 +14,10 @@ import { forEach } from '@angular/router/src/utils/collection';
 export class DestinationCountryCountComponent implements OnInit {
 
   destinationCountryCount = [];
-
+ title = 'Destination Country Count';
+ value = '- our country is in top 50 => we need to improve our security \n \
+           - our country is in last 50 => we\'re good \n \
+           - i can\'t open a dataCenter in a frequently targeted / vulnerable / poor infrastructure country'
   @ViewChild('chartTarget') 
   chartTarget: ElementRef;
 

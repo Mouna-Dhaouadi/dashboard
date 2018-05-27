@@ -1,11 +1,33 @@
-<div class="container col-md-6">
-    <h3> source Country Count
-        <span data-toggle="popover" title="Value" data-content="//if in the top 10 in attacks, country proabaly has very good hackers, good security engineer
-        // => BigCompanies: search for competent hackers thereand offer them empoyment
-        // =>New Businesses: review your business model and avoid messing with these people's interest, they can hack your system
-        // => government: hacking people in not moral, should review ethics and moral values => changes schools systems" class="badge badge-info">Value</span>  
-    </h3>
-          <div #chartTarget>
-            chart target
+
+ <div class="col-md-6">
+        <div class="card card-chart">
+            <div class="card-header card-header-default" style="background-color:  #ff9966">
+              <div class="row ">
+                <h3  class="card-title">{{title}}</h3>
+                <div class="">
+                <span class="badge badge-default" data-toggle="dropdown" id="navbarDropdownMenuLink"><h4>Value</h4></span>  
+              
+                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+                    <a href="#" class="dropdown-item"> <h4 style="white-space: pre;"> {{value}}</h4></a>
+                    </div>
+                </div>
+              </div>
+      
+          
+      
             </div>
-  </div>
+            <div class="card-body">
+                <div #chartTarget>
+                    chart target
+                    </div>
+                </div>
+            <div class="card-footer">
+                <div class="stats">
+               Since Last Batch Job
+                </div>
+            </div>
+        </div>
+      </div>
+      
+       
+      

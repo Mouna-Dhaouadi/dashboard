@@ -17,7 +17,8 @@ import { forEach } from '@angular/router/src/utils/collection';
 export class AttacksCountComponent implements OnInit {
 
   attackCount=[];
-
+  title = 'Attacks Count';
+  value = 'Marketing: our antivirus is effective against all of the top 50 attacks'
 
   @ViewChild('chartTarget') 
   chartTarget: ElementRef;

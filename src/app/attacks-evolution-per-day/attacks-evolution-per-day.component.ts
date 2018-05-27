@@ -14,7 +14,9 @@ import { forEach } from '@angular/router/src/utils/collection';
 export class AttacksEvolutionPerDayComponent implements OnInit {
 
   attacksEvolutionPerDay = [];
-
+  title='Attacks Evolution Per Day';
+  value = 'See evolution through the days'
+  
   @ViewChild('chartTarget') 
   chartTarget: ElementRef;
 
@@ -22,15 +24,18 @@ export class AttacksEvolutionPerDayComponent implements OnInit {
   
   ngAfterViewInit(){
     const options: Highcharts.Options = {
+      colors: ['#4CAF50'],
+
       chart: {
         type: 'line'
+      
       },
       title: {
         text: 'Attack Evolution Per Day'
       },
       xAxis: {
         title: {text: 'Days'},
-      type: "category"
+      type: "category",
       },
       yAxis: {
         title: {

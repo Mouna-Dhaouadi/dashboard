@@ -14,7 +14,12 @@ import { forEach } from '@angular/router/src/utils/collection';
 export class SourceCityCountComponent implements OnInit {
 
   sourceCityCount = [];
-
+  title = 'Source City Count';
+  value = 'if in the top 10 in attacks, city proabaly has very good hackers, good security engineer \n \
+    BigCompanies: search for competent hackers thereand offer them empoyment \n \
+    New Businesses: review your business model and avoid messing with these people\'s interest, they can hack your system \n \
+    government: hacking people in not moral, should review ethics and moral values => changes schools systems  \n \
+'
 
   @ViewChild('chartTarget') 
   chartTarget: ElementRef;
@@ -26,6 +31,7 @@ export class SourceCityCountComponent implements OnInit {
       chart: {
         type: 'scatter'
       },
+      colors:['#f44336'],
       title: {
         text: 'Source City Count'
       },

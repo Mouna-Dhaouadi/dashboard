@@ -16,6 +16,10 @@ export class DestinationCityCountComponent implements OnInit {
   @ViewChild('chartTarget') 
   chartTarget: ElementRef;
 
+  title = 'Destination City Count';
+  value = 'our city is in top 50 => we need to improve our security \n \
+           - our city is in last 50 => we\'re good \n \
+           - i can\'t open a dataCenter in a frequently targeted / vulnerable / poor infrastructure city  '
   chart: Highcharts.ChartObject;
   
   ngAfterViewInit(){
@@ -23,6 +27,7 @@ export class DestinationCityCountComponent implements OnInit {
       chart: {
         type: 'pie'
       },
+     
       title: {
         text: 'Destination City Count'
       },
